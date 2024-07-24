@@ -16,6 +16,7 @@ steps:
 
   - label: ":hammer: Tests"
     command: echo "$USER $PASSWORD"
+    command: echo "Okcan Yasin Saygili"
     plugins:
       docker#v3.5.0:
         user: root
