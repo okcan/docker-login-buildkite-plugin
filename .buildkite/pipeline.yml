@@ -1,3 +1,6 @@
+env: 
+  USER: "JohnDoe"
+  PASSWORD: "Welcome@123"
 steps:
   - label: ":shell: Tests"
     plugins:
@@ -15,6 +18,7 @@ steps:
           id: docker-login
 
   - label: ":hammer: Tests"
+     command: "echo $USER $PASSWORD"
     plugins:
       docker#v3.5.0:
         user: root
