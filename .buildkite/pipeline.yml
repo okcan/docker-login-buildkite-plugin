@@ -18,7 +18,7 @@ steps:
           id: docker-login
 
   - label: ":hammer: Tests"
-    command: "echo $USER $PASSWORD"
+    command: echo "$USER $PASSWORD"
     plugins:
       docker#v3.5.0:
         user: root
