@@ -1,6 +1,3 @@
-env: 
-  USER: "JohnDoe"
-  PASSWORD: "Welcome@123"
 steps:
   - label: ":shell: Tests"
     plugins:
