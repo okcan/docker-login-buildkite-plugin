@@ -1,5 +1,5 @@
 env: 
-  USER: "JohnDoe"
+  USER: "Okcan"
   PASSWORD: "Welcome@123"
 steps:
   - label: ":shell: Tests"
