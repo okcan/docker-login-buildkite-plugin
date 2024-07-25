@@ -1,21 +1,7 @@
 env: 
-  USER: "Okcan"
+  USER: "JohnDoe"
   PASSWORD: "Welcome@123"
 steps:
-  - label: ":shell: Tests"
-    plugins:
-      - plugin-tester#v1.1.1: ~
-
-  - label: ":shell: Shellcheck"
-    plugins:
-      - shellcheck#v1.3.0:
-          files:
-            - hooks/**
-
-  - label: ":sparkles: Lint"
-    plugins:
-      - plugin-linter#v3.3.0:
-          id: docker-login
 
   - label: ":hammer: Tests"
     command: echo "$USER $PASSWORD"
