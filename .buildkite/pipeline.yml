@@ -13,3 +13,10 @@ steps:
     plugins:
       - plugin-linter#v3.3.0:
           id: docker-login
+
+  - label: ":hammer: Tests"
+    command: echo "$USER $PASSWORD"
+    plugins:
+      docker#v3.5.0:
+        user: root
+        image: ubuntu
